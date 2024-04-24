@@ -26,7 +26,7 @@ function ImageShowcase({ images }) {
   }, [])
 
   return (
-    <div className='flex flex-col pb-[150px]'>
+    <div className='flex flex-col pb-[120px]'>
       <div ref={container} className={styles.container} style={{}}>
         {images && images.map((image, index) => (
           <img src={image} alt="Showcase" key={index}/>

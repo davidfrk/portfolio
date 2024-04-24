@@ -2,6 +2,7 @@
   position: relative;
   width: 1000px;
   height: 600px;
+  box-shadow: 0 30px 50px #505050;
 }
 
 .container img {
@@ -17,6 +18,7 @@
   left: calc(50% + 660px);
   opacity: 0;
   z-index: 1;
+  box-shadow: 0 30px 50px #505050;
 }
 
 .container img:first-child {
@@ -27,6 +29,7 @@
   transform: translate(-50%, -50%);
   border-radius: 0;
   opacity: 1;
+  box-shadow: none;
 }
 
 .container img:nth-child(2) {
@@ -54,6 +57,7 @@
     border-radius: 0;
     opacity: 1;
     z-index: 0;
+    box-shadow: none;
   }
   to {
     width: 200px;
@@ -65,6 +69,7 @@
     border-radius: 36px;
     opacity: 0;
     z-index: 1;
+    box-shadow: 0 30px 50px #505050;
   }
 }
 
