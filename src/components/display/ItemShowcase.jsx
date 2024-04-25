@@ -42,21 +42,23 @@ function ItemShowcase({ items }) {
   }, [])
 
   return (
-    <div className='flex flex-col pb-[120px]'>
-      <div ref={container} className={styles.container} style={{}}>
-        {items && items.map((item, index) => (
-          <div className={styles.item} key={index}>
-            <img src={item.image} alt={item.alt} className="w-full h-full object-cover"/>
-            <div className={styles.textContainer}>
-              <h1>{item.title}</h1>
-              <p className={styles.description}>{item.description}</p>
+    <div className='w-full h-full flex justify-center items-center overflow-hidden pb-[128px] pt-[60px]'>
+      <div className='flex flex-col'>
+        <div ref={container} className={styles.container} style={{}}>
+          {items && items.map((item, index) => (
+            <div className={styles.item} key={index}>
+              <img src={item.image} alt={item.alt} className="w-full h-full object-cover"/>
+              <div className={styles.textContainer}>
+                <h1>{item.title}</h1>
+                <p className={styles.description}>{item.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className='w-1/2 flex gap-4 mt-4 justify-center z-10'>
-        <button className="rounded-full text-[64px] text-slate-300 hover:text-white" type="button" onClick={prev} > <IoIosArrowDropleft /> </button>
-        <button className="rounded-full text-[64px] text-slate-300 hover:text-white" type="button" onClick={next} > <IoIosArrowDropright /> </button>
+          ))}
+        </div>
+        <div className='w-1/2 flex gap-4 mt-4 justify-center z-10'>
+          <button className="rounded-full text-[64px] text-slate-300 hover:text-white" type="button" onClick={prev} > <IoIosArrowDropleft /> </button>
+          <button className="rounded-full text-[64px] text-slate-300 hover:text-white" type="button" onClick={next} > <IoIosArrowDropright /> </button>
+        </div>
       </div>
     </div>
   )
