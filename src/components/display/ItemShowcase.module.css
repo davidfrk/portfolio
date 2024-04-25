@@ -1,15 +1,15 @@
 .container {
   position: relative;
-  width: 1000px;
-  height: 600px;
+  width: 80vw;
+  height: min(600px, 90vmin);
   box-shadow: 0 30px 50px #505050;
 }
 
-.container img {
+.container .item {
   position: absolute;
   top: 100%;
-  width: 200px;
-  height: 300px;
+  width: min(200px);
+  height: min(300px, 30vmin);
   object-position: 50% 50%;
   object-fit: cover;
   transform: translate(0%, -50%);
@@ -19,9 +19,10 @@
   opacity: 0;
   z-index: 1;
   box-shadow: 0 30px 50px #505050;
+  overflow: hidden;
 }
 
-.container img:first-child {
+.container .item:first-child {
   width: 100%;
   height: 100%;
   top: 50%;
@@ -32,17 +33,17 @@
   box-shadow: none;
 }
 
-.container img:nth-child(2) {
+.container .item:nth-child(2) {
   left: 50%;
   opacity: 1;
 }
 
-.container img:nth-child(3) {
+.container .item:nth-child(3) {
   left: calc(50% + 220px);
   opacity: 1;
 }
 
-.container img:nth-child(4) {
+.container .item:nth-child(4) {
   left: calc(50% + 440px);
   opacity: 1;
 }
@@ -76,3 +77,49 @@
 .slide_to_last {
   animation: slideToLast 0.8s step-end forwards;
 }
+
+.textContainer {
+  transform: translate(0, -100%);
+  color: white;
+  opacity: 0;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+  font-size: large;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+  background-color: rgba(30, 41, 59, 0.5);
+}
+
+.textContainer > * {
+  width: 50%;
+}
+
+@keyframes textSlideIn {
+  from {
+    transform: translate(0%, 0%);
+    opacity: 0;
+    filter: blur(100px);
+  }
+}
+
+@keyframes descriptionSlideIn {
+  from {
+    transform: translate(0%, 400px);
+    opacity: 0;
+    filter: blur(100px);
+  }
+}
+
+.firstElement .textContainer {
+  opacity: 1;
+  animation: textSlideIn 0.8s ease-out forwards;
+}
+
+.firstElement .textContainer .description{
+  animation: descriptionSlideIn 1.2s ease-out forwards;
+}
+
