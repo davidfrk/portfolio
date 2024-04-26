@@ -18,8 +18,13 @@
   left: calc(50% + 660px);
   opacity: 0;
   z-index: 1;
-  box-shadow: 0 30px 50px #505050;
   overflow: hidden;
+}
+
+@media screen and (min-width: 480px) {
+  .container .item {
+    box-shadow: 0 30px 50px #505050;
+  }
 }
 
 .container .item:first-child {
@@ -70,7 +75,6 @@
     border-radius: 36px;
     opacity: 0;
     z-index: 1;
-    box-shadow: 0 30px 50px #505050;
   }
 }
 
