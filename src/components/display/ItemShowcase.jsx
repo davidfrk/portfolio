@@ -37,17 +37,24 @@ function ItemShowcase({ items }) {
     setFirstElement(new_first)
   }
 
-  useEffect(() => {
+  function handleCardOnClick(e) {
+    firstElement.classList.remove(styles.firstElement)
+    container.current.append(firstElement)
 
-  }, [])
+    const target = e.target.closest(".card")
+    container.current.prepend(target)
+    target.classList.add(styles.firstElement)
+    setFirstElement(target)
+  }
 
   return (
     <div className='w-full flex justify-center items-center overflow-x-hidden pt-[64px]'>
       <div className={styles.main}>
         <div ref={container} className={styles.container}>
           {items && items.map((item, index) => (
-            <div className={styles.item} key={index}>
+            <div className={`card ${styles.item}`} key={index} onClick={handleCardOnClick}>
               <img src={item.image} alt={item.alt} className="w-full h-full object-cover"/>
+              {item.logo && <img src={item.logo} alt={item.alt} className={styles.logo}/>}
               <div className={styles.textContainer}>
                 <h1>{item.title}</h1>
                 <p className={styles.description}>{item.description}</p>

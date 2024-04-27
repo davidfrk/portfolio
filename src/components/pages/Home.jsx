@@ -6,12 +6,15 @@ import image2 from '/images/campoterra.webp'
 import image3 from '/images/cartas.webp'
 import image4 from '/images/rpg.webp'
 
+import logoOndaedes from '/images/logoOndaedes.webp'
+import logoCampoTerra from '/images/logoCampoTerra.webp'
+
 const items = [
-  {image: image0, alt:"showcase", title:"Raytracing", description:"Aplicação raytracing desenvolvido para Desktop e Web"},
-  {image: image1, alt:"showcase", title:"Ondaedes", description:"Georreferenciamos o combate às arbovíroses"},
-  {image: image2, alt:"showcase", title:"Campo Terra Imobiliária", description:"Compre ou anuncie com o suporte de quem se importa"},
-  {image: image3, alt:"showcase", title:"Cartas Mobile", description:"Jogo de cartas para Android"},
-  {image: image4, alt:"showcase", title:"Jogo RPG", description:"Projeto RPG desenvolvido com Unity"},
+  {image: image0, alt:"Raytracing showcase", title:"Raytracing", description:"Aplicação raytracing desenvolvido para Desktop e Web"},
+  {image: image1, logo: logoOndaedes, alt:"Ondaedes showcase", title:"Ondaedes", description:"Georreferenciamos o combate às arbovíroses"},
+  {image: image2, logo: logoCampoTerra, alt:"CampoTerra showcase", title:"Campo Terra Imobiliária", description:"Compre ou anuncie com o suporte de quem se importa"},
+  {image: image3, alt:"Cartas mobile showcase", title:"Cartas Mobile", description:"Jogo de cartas para Android"},
+  {image: image4, alt:"RPG showcase", title:"Jogo RPG", description:"Projeto RPG desenvolvido com Unity"},
 ]
 
 function Home() {

@@ -25,6 +25,23 @@
   overflow: hidden;
 }
 
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: white;
+}
+
+.firstElement .logo {
+  opacity: 0;
+}
+
 @media screen and (min-width: 480px) {
   .container .item {
     box-shadow: 0 30px 50px #505050;
@@ -78,6 +95,10 @@
 
 .slide_to_last {
   animation: slideToLast 0.8s step-end forwards;
+}
+
+.slide_to_last .logo {
+  opacity: 0;
 }
 
 .textContainer {
