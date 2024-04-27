@@ -11,20 +11,27 @@
 
 html, body, #root {
   --background-color: #001317;
-  --opposite-background-color: #efefef;
-  --accent-color: #269ea0;
-  --secondary-accent-color: #81404d;
-  --main-text-color: #fff;
-  --opposite-text-color: #000;
-  --secondary-text-color: #afafaf;
+  --background-color-2: #efefef; /* #cbd5e1 */
+  --accent-color: #ffbb33;
+  --accent-color-2: #81404d;
+  --text-color: #fff;
+  --text-color-2: #001317;
+  --text-color-span: #afafaf;
 
   background-color: var(--background-color);
-  color: var(--main-text-color);
+  color: var(--text-color);
   height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 h1 {
   font-size: min(8vw, 32px);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: min(8vw, 28px);
   line-height: 1.1;
 }
 
@@ -33,5 +40,9 @@ code {
 }
 
 span {
-  color: var(--secondary-text-color);
+  color: var(--text-color-span);
+}
+
+.shadow-drop-md {
+  filter: drop-shadow(-2px 2px 4px rgba(0, 0, 0, 0.5));
 }

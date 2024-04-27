@@ -42,9 +42,9 @@ function ItemShowcase({ items }) {
   }, [])
 
   return (
-    <div className='w-full h-full flex justify-center items-center overflow-hidden pb-[128px] pt-[60px]'>
-      <div className='flex flex-col'>
-        <div ref={container} className={styles.container} style={{}}>
+    <div className='w-full flex justify-center items-center overflow-x-hidden pt-[64px]'>
+      <div className={styles.main}>
+        <div ref={container} className={styles.container}>
           {items && items.map((item, index) => (
             <div className={styles.item} key={index}>
               <img src={item.image} alt={item.alt} className="w-full h-full object-cover"/>
@@ -57,16 +57,16 @@ function ItemShowcase({ items }) {
         </div>
         <div className='w-1/2 flex gap-4 mt-4 justify-center z-10'>
           <button
-            className="rounded-full text-[64px] text-slate-300 hover:text-[var(--accent-color)]"
+            className="rounded-full text-[64px] text-[var(--background-color)] hover:text-[var(--accent-color)]"
             type="button" onClick={prev} aria-label="Ir para item anterior"
           >
-              <IoIosArrowDropleft />
+              <IoIosArrowDropleft className='shadow-drop-md opacity-70 hover:opacity-100'/>
             </button>
           <button
-            className="rounded-full text-[64px] text-slate-300 hover:text-[var(--accent-color)]" 
+            className="rounded-full text-[64px] text-[var(--background-color)] hover:text-[var(--accent-color)]" 
             type="button" onClick={next} aria-label="Ir para próximo item"
           >
-            <IoIosArrowDropright />
+            <IoIosArrowDropright className='shadow-drop-md opacity-70 hover:opacity-100'/>
           </button>
         </div>
       </div>

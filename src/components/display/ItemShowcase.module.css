@@ -1,3 +1,7 @@
+.main {
+  padding-bottom: calc((min(300px, 30vmin) / 2) - 16px);
+}
+
 .container {
   position: relative;
   width: 80vw;
