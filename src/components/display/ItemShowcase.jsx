@@ -3,7 +3,7 @@ import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
 
 import styles from './ItemShowcase.module.css'
 
-function ItemShowcase({ items }) {
+function ItemShowcase({ items, customClass }) {
   const container = useRef(null)
   const [firstElement, setFirstElement] = useState()
 
@@ -48,7 +48,7 @@ function ItemShowcase({ items }) {
   }
 
   return (
-    <div className='w-full flex justify-center items-center overflow-x-hidden pt-[64px]'>
+    <div className={`w-full flex justify-center items-center overflow-x-hidden ${customClass}`}>
       <div className={styles.main}>
         <div ref={container} className={styles.container}>
           {items && items.map((item, index) => (

@@ -24,9 +24,9 @@ function Home() {
         <h1>Oi, como vai? Sou David, </h1>
         <p>Conheça um pouco do meu trabalho</p>
       </section>
-      <ItemShowcase items={items} />
-      <section className='mx-[10%] font-bold border-t-2 pt-4'>
-        <h2>Contato</h2>
+      <ItemShowcase items={items} customClass="py-12"/>
+      <section className='mx-[10%] font-bold'>
+        <h2></h2>
       </section>
     </div>
   )
