@@ -9,7 +9,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: min(200px);
+  width: min(200px, 20vmin);
   height: min(300px, 30vmin);
   object-position: 50% 50%;
   object-fit: cover;
