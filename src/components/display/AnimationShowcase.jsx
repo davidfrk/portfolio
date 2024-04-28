@@ -3,7 +3,7 @@ import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
 
 import buttonImg from '/images/button.png'
 
-import styles from './ItemShowcase.module.css'
+import styles from './AnimationShowcase.module.css'
 
 function AnimationShowcase({ items, customClass }) {
   const container = useRef(null)
