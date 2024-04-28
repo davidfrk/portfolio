@@ -3,7 +3,7 @@
 }
 
 .container {
-  background-image: url("/images/border.png");
+  background-image: url("/images/console.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -51,7 +51,7 @@
 }
 
 .container .item:first-child img {
-  border-radius: 60px;
+  border-radius: min(60px, 10vw);
 }
 
 .container .item:first-child {
@@ -115,7 +115,7 @@
 }
 
 .slide_to_last img {
-  border-radius: 60px;
+  border-radius: min(60px, 10vw);
 }
 
 .slide_to_last .logo {
@@ -141,6 +141,12 @@
 
 .textContainer > * {
   width: 50%;
+}
+
+@media screen and (max-width: 840px) {
+  .textContainer {
+    display: none;
+  }
 }
 
 @keyframes textSlideIn {
@@ -194,4 +200,10 @@
 
 .buttonsContainer img:hover {
   filter: drop-shadow(20px 30px 30px rgba(var(--accent-rgb), 1));
+}
+
+
+.descriptionMain p {
+  line-height: 1.1;
+  margin-bottom: 0.75em;
 }

@@ -8,12 +8,23 @@ import styles from './AnimationShowcase.module.css'
 function AnimationShowcase({ items, customClass }) {
   const container = useRef(null)
   const [firstElement, setFirstElement] = useState()
+  const [firstItem, setFirstItem] = useState(items[0])
 
   useEffect(() => {
     const first = container.current.firstElementChild
     first.classList.add(styles.firstElement)
     setFirstElement(first)
   }, [])
+
+  useEffect(() => {
+    if (!firstElement) return
+
+    const title = firstElement.querySelector("h1").textContent
+    const item = items.find(e => (e.title === title))
+    console.log(item)
+
+    setFirstItem(item)
+  }, [firstElement])
 
   function next() {
     container.current.append(container.current.firstElementChild)
@@ -50,8 +61,9 @@ function AnimationShowcase({ items, customClass }) {
   }
 
   return (
-    <div className='flex skew-y-[-30deg] rotate-[45deg] scale-[.7]'>
-      <div className={`w-full flex justify-center items-center py-12`}>
+    <div className='mb-[60vh]'>
+    <div className='skew-y-[-30deg] rotate-[45deg] scale-[.7]'>
+      <div className={`w-full flex justify-center items-center`}>
         <div className={styles.main}>
           <div ref={container} className={styles.container}>
             {items && items.map((item, index) => (
@@ -83,6 +95,26 @@ function AnimationShowcase({ items, customClass }) {
           </div>
         </div>
       </div>
+    </div>
+    <div className={styles.descriptionMain}>
+      <h1 className='text-[64px] skew-y-[-30deg] rotate-[45deg] mb-12 text-center'>{firstItem.title}</h1>
+      <h2 className='text-3xl skew-y-[-15deg] rotate-[25deg] mb-12 text-center'>{firstItem.description}</h2>
+      <div className='text-xl skew-y-[-5deg] rotate-[10deg] mb-12 text-center'><span>C# | Unity</span></div>
+      <div className='text-justify mx-[10%]'>
+        <p> Lorem ipsum dolor sit amet. Ex dolorum fugiat ut omnis molestiae non molestiae autem!
+            Ab animi voluptatum ut consequatur eligendi qui voluptatum dolor?
+        </p>
+        <p> Et accusantium harum eum quasi inventore est necessitatibus accusamus?
+            At quod accusantium non pariatur voluptatem rem fugiat voluptatibus ea esse dolorem.
+        </p>
+        <p>
+        Vel consequatur harum ea doloremque optio est distinctio incidunt non temporibus asperiores aut 
+        aperiam labore qui necessitatibus quam. Est delectus saepe qui natus eius ut quia illum sed voluptatem 
+        commodi vel omnis animi ut numquam repellat? Ut omnis nesciunt ea quam cupiditate est optio laudantium qui sunt consequatur 
+        qui architecto ratione sed maxime voluptatem nam voluptas eaque.
+        </p>
+      </div>
+    </div>
     </div>
   )
 }
