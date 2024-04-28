@@ -18,6 +18,8 @@ html, body, #root {
   --text-color-2: #001317;
   --text-color-span: #afafaf;
 
+  --accent-rgb: 255, 187, 51;
+
   background-color: var(--background-color);
   color: var(--text-color);
   height: 100%;

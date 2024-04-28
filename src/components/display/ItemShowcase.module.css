@@ -5,7 +5,7 @@
 .container {
   position: relative;
   width: 80vw;
-  height: min(600px, 90vmin);
+  height: min(600px, 60vmin);
   box-shadow: 0 30px 50px #505050;
 }
 
@@ -19,6 +19,7 @@
   object-fit: cover;
   transform: translate(330%, calc(min(600px, 90vmin) / 2 - 50%));
   border-radius: 36px;
+  box-shadow: 0 30px 50px #505050;
   transition: 0.8s;
   opacity: 0;
   z-index: 1;
@@ -40,12 +41,6 @@
 
 .firstElement .logo {
   opacity: 0;
-}
-
-@media screen and (min-width: 480px) {
-  .container .item {
-    box-shadow: 0 30px 50px #505050;
-  }
 }
 
 .container .item:first-child {
@@ -70,6 +65,10 @@
 .container .item:nth-child(4) {
   transform: translate(220%, calc(min(600px, 90vmin) / 2 - 50%));
   opacity: 1;
+}
+
+.container .item:nth-child(n + 2) {
+  cursor: pointer;
 }
 
 @keyframes slideToLast {
@@ -142,13 +141,33 @@
   animation: textSlideIn 0.8s ease-out forwards;
 }
 
-.firstElement .textContainer .description{
+.firstElement .textContainer .description {
   animation: descriptionSlideIn 1.2s ease-out forwards;
 }
-/*
-@media screen and (max-width: 480px) {
-  .container .item {
-    transition: 0s;
+
+.buttonsContainer {
+  display: flex;
+  width: 40vw;
+  margin-top: 24px;
+  height: 200px;
+}
+
+@media screen and (max-width: 840px) {
+  .buttonsContainer {
+    flex-wrap: wrap;
+  }
+
+  .buttonsContainer p {
+    position: relative;
+    top: -10%;
+    left: 40vw;
   }
 }
-*/
+
+.buttonsContainer img {
+  filter: drop-shadow(-2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.buttonsContainer img:hover {
+  filter: drop-shadow(20px 30px 30px rgba(var(--accent-rgb), 1));
+}

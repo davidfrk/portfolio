@@ -48,11 +48,11 @@ function ItemShowcase({ items, customClass }) {
   }
 
   return (
-    <div className={`w-full flex justify-center items-center overflow-x-hidden ${customClass}`}>
+    <div className={`w-full flex justify-center items-center ${customClass}`}>
       <div className={styles.main}>
         <div ref={container} className={styles.container}>
           {items && items.map((item, index) => (
-            <div className={`card ${styles.item}`} key={index} onClick={handleCardOnClick}>
+            <div className={`card select-none ${styles.item}`} key={index} onClick={handleCardOnClick}>
               <img src={item.image} alt={item.alt} className="w-full h-full object-cover"/>
               {item.logo && <img src={item.logo} alt={item.alt} className={styles.logo}/>}
               <div className={styles.textContainer}>
@@ -67,7 +67,7 @@ function ItemShowcase({ items, customClass }) {
             className="rounded-full text-[64px] text-[var(--background-color)] hover:text-[var(--accent-color)]"
             type="button" onClick={prev} aria-label="Ir para item anterior"
           >
-              <IoIosArrowDropleft className='shadow-drop-md opacity-70 hover:opacity-100'/>
+            <IoIosArrowDropleft className='shadow-drop-md opacity-70 hover:opacity-100'/>
             </button>
           <button
             className="rounded-full text-[64px] text-[var(--background-color)] hover:text-[var(--accent-color)]" 
