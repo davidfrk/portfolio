@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 120 165" xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" style="margin: auto; display: block; shape-rendering: auto;">
+  <path
+    d="M5,5 L30,30 S50,50 100,50 C150,50 150,100 100,100 Q50,100 50,150 L50,160" 
+    stroke="black" stroke-width="2" fill="none" stroke-dasharray="6,3"
+  />
+</svg>

@@ -1,3 +1,7 @@
+.skew {
+  transform: rotate(45deg) skewY(-30deg)  scale(.7);
+}
+
 .main {
   padding-bottom: calc((min(300px, 30vmin) / 2) - 16px);
 }
@@ -10,6 +14,16 @@
   width: 80vw;
   height: min(600px, 60vmin);
   filter: drop-shadow(20px 30px 50px #505050);
+}
+
+@media screen and (max-width: 840px) {
+  .skew {
+    transform: skewY(-15deg) rotate(10deg) scale(.7);
+  }
+
+  .container {
+    width: 120vw;
+  }
 }
 
 .container .item {
@@ -202,8 +216,11 @@
   filter: drop-shadow(20px 30px 30px rgba(var(--accent-rgb), 1));
 }
 
+.mainDescription {
+  margin-top: 200px;
+}
 
-.descriptionMain p {
+.mainDescription p {
   line-height: 1.1;
   margin-bottom: 0.75em;
 }

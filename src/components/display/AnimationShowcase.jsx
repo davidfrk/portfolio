@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from 'react'
 import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
 
 import buttonImg from '/images/button.png'
+import path from '/images/svg/path.svg'
 
 import styles from './AnimationShowcase.module.css'
 
@@ -21,7 +22,6 @@ function AnimationShowcase({ items, customClass }) {
 
     const title = firstElement.querySelector("h1").textContent
     const item = items.find(e => (e.title === title))
-    console.log(item)
 
     setFirstItem(item)
   }, [firstElement])
@@ -62,7 +62,7 @@ function AnimationShowcase({ items, customClass }) {
 
   return (
     <div className='mb-[60vh]'>
-    <div className='skew-y-[-30deg] rotate-[45deg] scale-[.7]'>
+    <div className={`${styles.skew}`}>
       <div className={`w-full flex justify-center items-center`}>
         <div className={styles.main}>
           <div ref={container} className={styles.container}>
@@ -96,7 +96,12 @@ function AnimationShowcase({ items, customClass }) {
         </div>
       </div>
     </div>
-    <div className={styles.descriptionMain}>
+    <div className={styles.mainDescription}>
+      <div className='relative skew-y-[-30deg] rotate-[45deg] select-none'>
+        <div className='absolute left-[32%] bottom-0'>
+          <img src={path} alt="caminho curvado" width="400px" height="400px" draggable={false}/>
+        </div>
+      </div>
       <h1 className='text-[64px] skew-y-[-30deg] rotate-[45deg] mb-12 text-center'>{firstItem.title}</h1>
       <h2 className='text-3xl skew-y-[-15deg] rotate-[25deg] mb-12 text-center'>{firstItem.description}</h2>
       <div className='text-xl skew-y-[-5deg] rotate-[10deg] mb-12 text-center'><span>C# | Unity</span></div>
