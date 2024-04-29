@@ -5,6 +5,7 @@ import buttonImg from '/images/button.png'
 import path from '/images/svg/path.svg'
 
 import styles from './AnimationShowcase.module.css'
+import AnimationManager from './AnimationManager';
 
 function AnimationShowcase({ items, customClass }) {
   const container = useRef(null)
@@ -96,6 +97,7 @@ function AnimationShowcase({ items, customClass }) {
         </div>
       </div>
     </div>
+    <AnimationManager Animation={firstItem.animation} container={container}/>
     <div className={styles.mainDescription}>
       <div className='relative skew-y-[-30deg] rotate-[45deg] select-none'>
         <div className='absolute left-[32%] bottom-0'>

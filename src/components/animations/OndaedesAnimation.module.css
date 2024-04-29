@@ -1,0 +1,35 @@
+.main {
+  position: absolute;
+  transform: translate(calc(225px + 46vw), calc(-61vh));
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  animation: entry ease-in 1s;
+}
+
+@media screen and (max-width: 840px) {
+  .main {
+    display: none;
+  }
+}
+
+.pole {
+  position: relative;
+  height: 300px;
+  border-left: 5px dashed black;
+  bottom: 300px;
+}
+
+.flag {
+  padding-left: 5px;
+  width: 300px;
+}
+
+@keyframes entry {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
