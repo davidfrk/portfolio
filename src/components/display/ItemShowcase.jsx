@@ -91,8 +91,8 @@ function ItemShowcase({ items, customClass }) {
       <div className={styles.mainDescription}>
         <h1 className='mb-12 text-[4rem] text-center'>{firstItem.title}</h1>
         <h2 className='text-3xl mb-12 text-center'>{firstItem.description}</h2>
-        <div className='text-xl mb-12 text-center'><span>{firstItem.technologies}</span></div>
-        <div className='text-justify text-xl'>
+        <div className='text-xl mb-28 text-center'><span>{firstItem.technologies}</span></div>
+        <div className='text-justify text-xl text'>
           <p>
               Lorem ipsum dolor sit amet. Ex dolorum fugiat ut omnis molestiae non molestiae autem!
               Ab animi voluptatum ut consequatur eligendi qui voluptatum dolor?

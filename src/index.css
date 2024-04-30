@@ -45,6 +45,10 @@ h2 {
   line-height: 1.1;
 }
 
+.text p {
+  margin-bottom: 0.75em;
+}
+
 code {
   font-family: Consolas, 'Courier New', monospace;
 }

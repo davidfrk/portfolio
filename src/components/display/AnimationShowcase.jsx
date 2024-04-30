@@ -106,12 +106,7 @@ function AnimationShowcase({ items, customClass }) {
       </div>
       <h1 className='text-[4rem] skew-y-[-30deg] rotate-[45deg] mb-12 text-center'>{firstItem.title}</h1>
       <h2 className='text-3xl skew-y-[-15deg] rotate-[25deg] mb-12 text-center'>{firstItem.description}</h2>
-      <div className='text-xl skew-y-[-5deg] rotate-[10deg] mb-12 text-center'><span>{firstItem.technologies}</span></div>
-      <div className='text-center text-xl'>
-        <p>Então seguiríamos com o formato padrão.</p>
-        <p>O mesmo conteúdo pode ser apresentado em diferentes formas.</p>
-        <p>Transmitir diferentes perspectivas e sentimentos.</p>
-      </div>
+      <div className='text-xl skew-y-[-5deg] rotate-[10deg] mb-28 text-center'><span>{firstItem.technologies}</span></div>
     </div>
     </div>
   )
