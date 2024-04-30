@@ -176,3 +176,14 @@
 .buttonsContainer img:hover {
   filter: drop-shadow(20px 30px 30px rgba(var(--accent-rgb), 1));
 }
+
+.mainDescription {
+  margin-top: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.mainDescription p {
+  line-height: 1.1;
+  margin-bottom: 0.75em;
+}

@@ -104,10 +104,10 @@ function AnimationShowcase({ items, customClass }) {
           <img src={path} alt="caminho curvado" width="400px" height="400px" draggable={false}/>
         </div>
       </div>
-      <h1 className='text-[64px] skew-y-[-30deg] rotate-[45deg] mb-12 text-center'>{firstItem.title}</h1>
+      <h1 className='text-[4rem] skew-y-[-30deg] rotate-[45deg] mb-12 text-center'>{firstItem.title}</h1>
       <h2 className='text-3xl skew-y-[-15deg] rotate-[25deg] mb-12 text-center'>{firstItem.description}</h2>
-      <div className='text-xl skew-y-[-5deg] rotate-[10deg] mb-12 text-center'><span>C# | Unity</span></div>
-      <div className='text-justify mx-[10%]'>
+      <div className='text-xl skew-y-[-5deg] rotate-[10deg] mb-12 text-center'><span>{firstItem.technologies}</span></div>
+      <div className='text-justify'>
         <p> Lorem ipsum dolor sit amet. Ex dolorum fugiat ut omnis molestiae non molestiae autem!
             Ab animi voluptatum ut consequatur eligendi qui voluptatum dolor?
         </p>

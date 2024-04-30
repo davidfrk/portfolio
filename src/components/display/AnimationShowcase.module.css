@@ -146,19 +146,26 @@
   gap: 1.5rem;
   justify-content: center;
   padding: 1rem;
-  font-size: large;
-  font-weight: 600;
-  text-shadow: 2px 2px 2px black;
-  background-color: rgba(30, 41, 59, 0.5);
+  font-size: 1.6rem;
+  background-color: rgba(30, 41, 59, 0.6);
   border-radius: 60px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .textContainer > * {
   width: 50%;
 }
 
+.textContainer h1 {
+  font-weight: 600;
+}
+
 @media screen and (max-width: 840px) {
-  .textContainer {
+  .textContainer > * {
+    width: 100%;
+  }
+
+  .description {
     display: none;
   }
 }
@@ -213,11 +220,13 @@
 }
 
 .buttonsContainer img:hover {
-  filter: drop-shadow(20px 30px 30px rgba(var(--accent-rgb), 1));
+  filter: drop-shadow(20px 15px 15px rgba(var(--accent-rgb), 1));
 }
 
 .mainDescription {
   margin-top: 200px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .mainDescription p {
