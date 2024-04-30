@@ -20,7 +20,7 @@ const projects = [
   },
   {
     image: image2, alt:"CampoTerra showcase", title:"Campo Terra Imobiliária", description:"Compre ou anuncie com o suporte de quem se importa",
-    technologies:"React, Python, NoSQL, GCloud App Engine,"
+    technologies:"React, Python, NoSQL, GCloud App Engine"
   },
   {
     image: image3, alt:"Cartas mobile showcase", title:"Cartas Mobile", description:"Jogo de cartas para Android",

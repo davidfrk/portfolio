@@ -1,5 +1,6 @@
 import AnimationShowcase from '../display/AnimationShowcase'
 import ItemShowcase from '../display/ItemShowcase'
+import ContactButton from '../input/ContactButton'
 import { projects } from '../../data/projects'
 
 function Home() {
@@ -11,9 +12,9 @@ function Home() {
       </section>
       <ItemShowcase items={projects} />
       <AnimationShowcase items={projects} />
-      <section className='mx-[10%] font-bold'>
-        <h2></h2>
-      </section>
+      <div className='flex justify-center my-[30%]'>
+        <ContactButton/>
+      </div>
     </div>
   )
 }

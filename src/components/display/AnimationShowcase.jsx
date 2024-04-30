@@ -62,7 +62,7 @@ function AnimationShowcase({ items, customClass }) {
   }
 
   return (
-    <div className='mb-[60vh]'>
+    <div className={customClass}>
     <div className={`${styles.skew}`}>
       <div className={`w-full flex justify-center items-center`}>
         <div className={styles.main}>
@@ -107,19 +107,10 @@ function AnimationShowcase({ items, customClass }) {
       <h1 className='text-[4rem] skew-y-[-30deg] rotate-[45deg] mb-12 text-center'>{firstItem.title}</h1>
       <h2 className='text-3xl skew-y-[-15deg] rotate-[25deg] mb-12 text-center'>{firstItem.description}</h2>
       <div className='text-xl skew-y-[-5deg] rotate-[10deg] mb-12 text-center'><span>{firstItem.technologies}</span></div>
-      <div className='text-justify'>
-        <p> Lorem ipsum dolor sit amet. Ex dolorum fugiat ut omnis molestiae non molestiae autem!
-            Ab animi voluptatum ut consequatur eligendi qui voluptatum dolor?
-        </p>
-        <p> Et accusantium harum eum quasi inventore est necessitatibus accusamus?
-            At quod accusantium non pariatur voluptatem rem fugiat voluptatibus ea esse dolorem.
-        </p>
-        <p>
-        Vel consequatur harum ea doloremque optio est distinctio incidunt non temporibus asperiores aut 
-        aperiam labore qui necessitatibus quam. Est delectus saepe qui natus eius ut quia illum sed voluptatem 
-        commodi vel omnis animi ut numquam repellat? Ut omnis nesciunt ea quam cupiditate est optio laudantium qui sunt consequatur 
-        qui architecto ratione sed maxime voluptatem nam voluptas eaque.
-        </p>
+      <div className='text-center text-xl'>
+        <p>Então seguiríamos com o formato padrão.</p>
+        <p>O mesmo conteúdo pode ser apresentado em diferentes formas.</p>
+        <p>Transmitir diferentes perspectivas e sentimentos.</p>
       </div>
     </div>
     </div>
