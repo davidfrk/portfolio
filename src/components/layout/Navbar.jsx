@@ -8,8 +8,8 @@ function Navbar() {
       </div>
       <ul className="w-full flex items-center justify-end gap-4 px-8">
         <li><Link to="/" className="hover:text-[var(--accent-color)]">Home</Link></li>
-        <li><Link to="/" className="hover:text-[var(--accent-color)]">Blog</Link></li>
-        <li><Link to="/" className="hover:text-[var(--accent-color)]">Contato</Link></li>
+        <li><Link to="/blog" className="hover:text-[var(--accent-color)]">Blog</Link></li>
+        <li><Link to="/contact" className="hover:text-[var(--accent-color)]">Contato</Link></li>
       </ul>
     </nav>
   )
