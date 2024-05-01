@@ -1,7 +1,7 @@
 const contactInfo = {
   phone: "(31) 99612-3697",
   email: "david.andrade.dk@gmail.com",
-  linkedin: "https://www.linkedin.com/in/david-andrade-dk/",
+  linkedin: "https://linkedin.com/in/david-andrade-dk/",
   github: "https://github.com/davidfrk",
 }
 

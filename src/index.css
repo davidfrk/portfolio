@@ -37,12 +37,12 @@ input {
 
 h1 {
   font-size: min(8vw, 32px);
-  line-height: 1.1;
+  line-height: 1.4;
 }
 
 h2 {
   font-size: min(8vw, 28px);
-  line-height: 1.1;
+  line-height: 1.4;
 }
 
 .text p {
