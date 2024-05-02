@@ -4,7 +4,7 @@ import ContactButton from '../input/ContactButton'
 function Contact() {
   return (
     <div className='text-[var(--text-color-2)] w-full flex flex-col justify-center items-center min-h-[80vh]'>
-      <div className='text-md md:text-xl mb-24 text'>
+      <div className='text-md md:text-xl mb-24 px-2 text'>
         <h1 className='mb-0 leading-none'>David Andrade,</h1>
         <h2 className='mb-8'><span>Desenvolver Full Stack</span></h2>
         <p><b className='mr-2'>Telefone:</b> {contactInfo.phone}</p>

@@ -120,8 +120,10 @@
   background-color: rgba(30, 41, 59, 0.5);
 }
 
-.textContainer > * {
-  width: 50%;
+@media screen and (min-width: 640px) {
+  .textContainer > * {
+    width: 50%;
+  }
 }
 
 @keyframes textSlideIn {
