@@ -7,9 +7,9 @@
   <script>
     (function() {
       const path = window.location.pathname;
-      if (path !== '/' && !path.includes('.')) {
-        const currentUrl = window.location.href;
-        const desiredUrl = currentUrl.replace(/\/$/, '') + '/#/' + path.substring(1);
+      if (path !== '/portfolio' && !path.includes('.')) {
+        const route = path.substring("/portfolio/".length)
+        const desiredUrl = '/portfolio/#/' + route;
         window.location.href = desiredUrl;
       }
     })();
