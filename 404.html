@@ -7,8 +7,10 @@
   <script>
     (function() {
       const path = window.location.pathname;
-      if (path !== '/' && !path.includes('.')) {
-        window.location.href = '/portfolio/';
+      if (path !== '/portfolio' && !path.includes('.')) {
+        const route = path.substring("/portfolio/".length)
+        const desiredUrl = '/portfolio/#/' + route;
+        window.location.href = desiredUrl;
       }
     })();
   </script>
