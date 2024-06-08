@@ -33,9 +33,10 @@ function Contact() {
           <div className="font-bold block text-nowrap">Tech Stack |</div>
           <div className="flex p-2 items-center text-3xl justify-start flex-wrap">
             <IconDisplay title="React"><FaReact/></IconDisplay>
+            <IconDisplay title="Flask"><SiFlask/></IconDisplay>
             <IconDisplay title="Github"><FaGithub/></IconDisplay>
             <IconDisplay title="PostgreSQL"><SiPostgresql/></IconDisplay>
-            <IconDisplay title="Flask"><SiFlask/></IconDisplay>
+            <IconDisplay title="ReactNative"><FaReact/></IconDisplay>
             <IconDisplay title="Rust"><FaRust/></IconDisplay>
             <IconDisplay title="SQL"><TbSql/></IconDisplay>
             <IconDisplay title="Unity"><FaUnity/></IconDisplay>
