@@ -5,6 +5,7 @@ import image1 from '/images/ondaedesConsole.webp'
 import image2 from '/images/campoterraConsole.webp'
 import image3 from '/images/cartas.webp'
 import image4 from '/images/rpg.webp'
+import ondaedesAppImage from '/images/ondaedes-app.png'
 
 import logoOndaedes from '/images/logoOndaedes.webp'
 import logoCampoTerra from '/images/logoCampoTerra.webp'
@@ -31,6 +32,14 @@ const projects = [
       <p>Com visualização georreferenciada de resposta rápida trazemos claridade ao estado de infestações e fatores agravantes, 
         mas não só isso, o Ondaedes se estende com previsões meteorológicas para traçar áreas de risco e identificar períodos onde a ação se faz necessária.</p>
       <p>Com o trabalho de todos podemos combater com esforço eficaz.</p>
+    </div>)
+  },
+  {
+    image: ondaedesAppImage, alt:"Ondaedes app showcase", title:"Ondaedes App", description:"Acompanhe em tempo real as áreas de risco às arbovíroses",
+    technologies:"React Native, Skia Graphics Engine, Android SDK, Flask",
+    text:(<div>
+      <p>Nosso app vai acompanhar as áreas de risco próximas a você e lhe avisar sobre as condições de infecção atuais.</p>
+      <p>Pela primeira vez, as estatísticas de arboviroses são entregues à população de forma fácil e clara.</p>
     </div>)
   },
   {
