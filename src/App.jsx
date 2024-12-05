@@ -6,6 +6,7 @@ import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Contact from './components/pages/Contact'
 import Blog from './components/pages/Blog'
+import BlogPost from './components/pages/BlogPost'
 
 function App() {
   const RouteHandler = () => {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/posts/:id" element={<BlogPost/>} />
         <Route path="*" element={<Home />} />
       </Routes>
     );
