@@ -1,3 +1,5 @@
+import { imageRouter } from "../../../utils/router";
+
 export default function OndaedesAppBlogPost() {
   return <>
     <h1>Desenvolvimento do Aplicativo Ondaedes</h1>
@@ -33,8 +35,8 @@ export default function OndaedesAppBlogPost() {
     <p>Nosso cliente optou por um visual chamado <i>neumorphism</i>, que traz interfaces limpas com ilusão de 3D.</p>
 
     <div className="flex flex-col md:flex-row w-full justify-center gap-4">
-      <img className="rounded-[32px]" src="/images/ondaedes/app-home.png" alt="Tela inicial" />
-      <img className="rounded-[32px]" src="/images/ondaedes/app-mycity.png" alt="Tela minha cidade" />
+      <img className="rounded-[32px]" src={imageRouter("/images/ondaedes/app-home.png")} alt="Tela inicial" />
+      <img className="rounded-[32px]" src={imageRouter("/images/ondaedes/app-mycity.png")} alt="Tela minha cidade" />
     </div>
 
     <p>Este foi o resultado.</p>

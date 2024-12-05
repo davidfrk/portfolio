@@ -8,7 +8,7 @@ const blogPosts = [
     thumbnailAlt: "Aplicativo Ondaedes",
     publishDate: "05 de Dezembro, 2024",
     techList: "Expo, Android, React Native",
-    link: "/posts/ondaedes.app",
+    link: "/posts/ondaedesapp",
     content: OndaedesApp,
   },
 ]
