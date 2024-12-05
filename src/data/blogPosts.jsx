@@ -1,4 +1,5 @@
-import OndaedesApp from "../components/pages/posts/OndaedesApp"
+import OndaedesAppBlogPost from "../components/pages/posts/OndaedesApp"
+import OndaedesSiteBlogPost from "../components/pages/posts/OndaedesSite";
 
 const blogPosts = [
   {
@@ -9,7 +10,17 @@ const blogPosts = [
     publishDate: "05 de Dezembro, 2024",
     techList: "Expo, Android, React Native",
     link: "/posts/ondaedesapp",
-    content: OndaedesApp,
+    content: OndaedesAppBlogPost,
+  },
+  {
+    title: "Desenvolvimento do Site Ondaedes",
+    description: "Página Ondaedes desenvolvida com aplicação de georreferenciamento Big Data.",
+    thumbnail: "/images/ondaedes/logo.png",
+    thumbnailAlt: "Página Ondaedes",
+    publishDate: "05 de Dezembro, 2024",
+    techList: "Flask, QGIS, MapBox, Python",
+    link: "/posts/ondaedessite",
+    content: OndaedesSiteBlogPost,
   },
 ]
 
