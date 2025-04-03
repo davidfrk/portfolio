@@ -6,11 +6,20 @@ import image2 from '/images/campoterraConsole.webp'
 import image3 from '/images/cartas.webp'
 import image4 from '/images/rpg.webp'
 import ondaedesAppImage from '/images/ondaedes-app.png'
+import desenvolvaSite from '/images/desenvolvaSite/desenvolva2.png'
 
 import logoOndaedes from '/images/logoOndaedes.webp'
 import logoCampoTerra from '/images/logoCampoTerra.webp'
 
 const projects = [
+  {
+    image: desenvolvaSite, alt:"Desenvolva Site", title:"Desenvolva Site", description:"Página de desenvolvilmento para websites e apps",
+    technologies:"Next.js, React, Vercel, PostgreSQL",
+    text:(<div>
+      <p>A <a href="www.desenvolva.site" target='_blank'>Desenvolva Site</a> é uma empresa de desenvolvimento de páginas web e aplicativos mobile.</p>
+      <p>Também realiza consultoria técnica para projetos, abordando as tecnologias usadas, a infraestrutura e os pontos críticos do projeto.</p>
+    </div>)
+  },
   {
     image: image0, alt:"Raytracing showcase", title:"Raytracing", description:"Aplicação raytracing desenvolvido para Desktop e Web",
     technologies:"Computação Gráfica, Rust, WebGPU, Shaders",
