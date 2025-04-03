@@ -1,7 +1,18 @@
 import OndaedesAppBlogPost from "../components/pages/posts/OndaedesApp"
 import OndaedesSiteBlogPost from "../components/pages/posts/OndaedesSite";
+import DesenvolvaSiteBlogPost from "../components/pages/posts/DesenvolvaSite";
 
 const blogPosts = [
+  {
+    title: "Desenvolva Site",
+    description: "Criação da página Desenvolva. Para este projeto adotamos o Next.js, cobrindo tanto o frontend quanto o backend.",
+    thumbnail: "/images/desenvolvaSite/desenvolva2.png",
+    thumbnailAlt: "Desenvolva Site",
+    publishDate: "03 de Abril, 2025",
+    techList: "Next.js, PostgreSQL, React",
+    link: "/posts/desenvolvaSite",
+    content: DesenvolvaSiteBlogPost,
+  },
   {
     title: "Desenvolvimento do Aplicativo Ondaedes",
     description: "App Android desenvolvido em React Native para Ondaedes. Neste posts temos um estudo de caso da proposta e o que foi desenvolvido.",
